@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const FlashContainer = styled.div`
   width: 100%;
@@ -8,7 +8,7 @@ const FlashContainer = styled.div`
   margin-bottom: 20px !important;
   border: 1px solid transparent;
   border-radius: 4px;
-  `
+`
 
 const FlashError = styled(FlashContainer)`
   color: #A94442;
@@ -22,12 +22,11 @@ const FlashSuccess = styled(FlashContainer)`
   border-color: #D6E9C6;
 `
 
-const FlashInfo = styled(FlashContainer)`
+const  FlashInfo = styled(FlashContainer)`
   color: #31708F;
   background-color: #D9EDF7;
   border-color: #BCE8F1;
 `
-
 const Close = styled.span`
   float: right;
   color: grey;
@@ -44,9 +43,7 @@ class Flash extends React.Component {
   }
 
   fade = () => {
-    setTimeout( () => {
-      this.clearFlash()
-    }, this.props.duration || 10000)
+    setTimeout( this.clearFlash, this.props.duration || 10000)
   }
 
   clearFlash = () => {
@@ -57,12 +54,12 @@ class Flash extends React.Component {
     let FlashComponent
 
     const { message, msgType } = this.state
-    if (message) {}
-      switch (msgType) {
+    if (message) {
+      switch(msgType) {
         case 'success':
           FlashComponent = FlashSuccess
           break
-        case 'error'
+        case 'error':
           FlashComponent = FlashError
           break
         default:
@@ -80,6 +77,6 @@ class Flash extends React.Component {
       return null
     }
   }
-};
+}
 
-export default Flash;
+export default Flash
