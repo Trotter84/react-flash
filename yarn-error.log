@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /Users/danieltrotter/.npm-global/bin/yarn add styled-components react react-dom --dev
+
+PATH: 
+  ~/.npm-global/bin:/Users/danieltrotter/arc/arcanist/bin:/Users/danieltrotter/.rbenv/shims:~/.npm-global/bin:/Users/danieltrotter/.rbenv/shims:/Applications/Postgres.app/Contents/Versions/10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/danieltrotter/.npm-global/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/styled-components: ETIMEDOUT
+      at Timeout._onTimeout (/Users/danieltrotter/.npm-global/lib/node_modules/yarn/lib/cli.js:138128:19)
+      at ontimeout (timers.js:424:11)
+      at tryOnTimeout (timers.js:288:5)
+      at listOnTimeout (timers.js:251:5)
+      at Timer.processTimers (timers.js:211:10)
+
+npm manifest: 
+  {
+    "name": "react-flash",
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "description": "A react flash component",
+    "homepage": "https://github.com/Trotter84/react-flash",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Trotter84/react-flash"
+    },
+    "author": "trotter84",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
